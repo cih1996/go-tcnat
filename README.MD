@@ -15,10 +15,14 @@
 [示例](config/server.json)
 
 启动服务
-```
+
 #通过发布程序
+```
 ./main server
+```
+
 #通过源码
+```
 go run main.go server
 ```
 > 也可以通过修改.env的MODE来控制选择client/server，则无需传递参数，直接执行
