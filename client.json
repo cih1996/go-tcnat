@@ -1,35 +1,12 @@
 {
     "server": {
-        "host": "1.12.233.218"
+        "host": "1.12.233.118"
     },
 
     "list": [{
         "tag": "bt-login",
-        "server_port": 1555,
-        "local_addr": "192.168.0.120:22801"
-    },{
-        "tag": "mysql",
-        "server_port": 33061,
-        "local_addr": "192.168.0.120:3306"
-    }
-    ,{
-        "tag": "pdd-web",
-        "server_port": 2001,
-        "local_addr": "192.168.0.120:2001"
-    }
-    ,{
-        "tag": "pdd-api",
-        "server_port": 2002,
-        "local_addr": "192.168.0.120:2002"
-    }
-    ,{
-        "tag": "pdd-kd",
-        "server_port": 2003,
-        "local_addr": "192.168.0.120:2003"
-    },{
-        "tag": "ads",
-        "server_port": 2004,
-        "local_addr": "192.168.0.120:2004"
+        "server_port": 2555,
+        "local_addr": "192.168.0.120:8888"
     }
 ]
 }
