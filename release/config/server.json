@@ -1,6 +1,0 @@
-{
-    "server": {
-        "main_port": 8080,
-        "transfer_port":7077
-    }
-}
