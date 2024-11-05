@@ -1,6 +1,8 @@
 {
     "server": {
-        "host": "1.12.233.118"
+        "host": "1.12.233.118",
+        "main_port": 8080,
+        "transfer_port":7077
     },
 
     "list": [{
