@@ -74,13 +74,12 @@ go get github.com/joho/godotenv
 go build -o tcnat.exe main.go
 ```
 
-# linux用户一键部署命令(未完全更新，需要手动配置文件)
+**linux用户一键部署命令(未完全更新，需要手动配置文件)**
 ```
 curl -sSL http://1.12.233.218:3000/tcnat-for-linux-install.sh -o /tmp/tcnat-install.sh && bash /tmp/tcnat-install.sh
-
 ```
 
-# windows用户一键部署命令(未完全更新，需要手动配置文件)
+**windows用户一键部署命令(未完全更新，需要手动配置文件)** 
 ```
 Set-ExecutionPolicy Restricted -Scope CurrentUser
 curl -L http://1.12.233.218:3000/tcnat-for-windows-install.ps1 -o install.ps1
