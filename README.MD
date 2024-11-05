@@ -57,22 +57,19 @@ go run main.go client
 
 
 # 编译发布
+安装库之前切换到国内源，否则容易安装失败
+- windows
 ```
-go build -o server.exe server.go
-```
+export GOPROXY=https://goproxy.cn,direct
 
-
-# 升级记录
-- 2024.11.6
-1. 在操作map时增加锁防止死锁保持
-2. 优化结构，将客户端和服务端合并
-3. 新增配置文件.env用于控制启动模式(client/server)
-4. 新增可通过命令行来切换模式，在无参数的情况下默认使用.env
 ```
-./main server   #以客户端模式运行
-./main client   #以服务端模式运行
+- linux
 ```
-
-- 2024.11.5
-1. 初次发布，构建最基本的转发功能
+set GOPROXY=https://goproxy.cn,direct
+```
+安装成功后执行编译
+```
+go get github.com/joho/godotenv
+go build -o tcnat.exe main.go
+```
 
