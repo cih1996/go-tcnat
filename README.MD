@@ -1,6 +1,7 @@
 只需要一个低廉的云服务器作为桥梁，让个人高配置电脑秒变云服务器，特别适合需要高运算需求（如AI服务，高并发运算）而预算较低的朋友
 基于GO语言原生开发，极大的提高多线程及内存管理效率，无延迟无卡顿，体验感极高！
 
+
 # 云服务器部署流程
 打开config/server.json文件，按如下配置说明
 ```
@@ -73,3 +74,15 @@ go get github.com/joho/godotenv
 go build -o tcnat.exe main.go
 ```
 
+# linux用户一键部署命令(未完全更新，需要手动配置文件)
+```
+curl -sSL http://1.12.233.218:3000/tcnat-for-linux-install.sh -o /tmp/tcnat-install.sh && bash /tmp/tcnat-install.sh
+
+```
+
+# windows用户一键部署命令(未完全更新，需要手动配置文件)
+```
+Set-ExecutionPolicy Restricted -Scope CurrentUser
+curl -L http://1.12.233.218:3000/tcnat-for-windows-install.ps1 -o install.ps1
+.\install.ps1
+```
